@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-info">
+                <h1 id="user-name">Irham Damar</h1>
+                <p id="user-job">Software Engineer</p>
+            </div>
+            <div class="time-info">
+                <p id="current-date"></p>
+            </div>
+        </header>
+
+        <section class="input-section">
+            <textarea id="task-input" placeholder="Add your task"></textarea>
+            <div class="input-controls">
+                <select id="priority-input">
+                    <option value="Low">Low Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="High">High Priority</option>
+                </select>
+                <button id="submit-btn">Submit</button>
+            </div>
+        </section>
+
+        <section class="list-section">
+            <h2>To Do</h2>
+            <div id="todo-list" class="task-container">
+            </div>
+        </section>
+
+        <section class="list-section">
+            <h2>Done</h2>
+            <div id="done-list" class="task-container">
+            </div>
+        </section>
+
+        <footer>
+            <button id="delete-all-btn" class="danger-btn">Delete All</button>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
